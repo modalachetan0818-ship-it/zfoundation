@@ -1,0 +1,152 @@
+.container {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Fixed Image Size & Rounded Corners */
+.imageContainer {
+  flex: 0 0 350px; /* Exact size control */
+}
+
+.founderImg {
+  width: 100%;
+  height: 450px; /* Maintains vertical rectangle shape from reference */
+  object-fit: cover;
+  border-radius: 40px; /* Matches the deep rounded corners in your image */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.detailsContent {
+  flex: 1;
+}
+
+.founderName {
+  color: #ce1212; /* ZFoundation Red */
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.designation {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.quote {
+  color: #2b8a3e; /* ZFoundation Green */
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.highlightText {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.biography {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.biography p {
+  margin-bottom: 15px;
+}
+
+/* Social Media Icons Styling */
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.iconCircle {
+  width: 45px;
+  height: 45px;
+  background-color: #455a64; /* Dark grey-blue from image */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.iconCircle1 {
+  width: 45px;
+  height: 45px;
+  background-color: #455a64; /* Dark grey-blue from image */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+
+.iconCircle2{
+  width: 45px;
+  height: 45px;
+  background-color: #455a64; /* Dark grey-blue from image */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+
+.iconCircle:hover {
+  background-color: #ce1212;
+  transform: translateY(-3px);
+}
+
+.iconCircle1:hover{
+    background-color: #4621dc;
+  transform: translateY(-3px);
+}
+
+.iconCircle2:hover{
+    background-color: #e414a9;
+  transform: translateY(-3px);
+}
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageContainer {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 400px;
+  }
+}

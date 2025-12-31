@@ -1,0 +1,136 @@
+.container {
+  padding: 80px 20px;
+  background-color: #f0f4f8; /* Light blue-grey background from your image */
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* Match image proportions */
+  gap: 30px;
+}
+
+.imageSection {
+  width: 100%;
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px; /* Deep rounded corners as seen in img */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* White Story Card */
+.storyCard {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.title {
+  color: #ce1212; /* NGO Red */
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.subtitle {
+  color: #2b8a3e; /* NGO Green */
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 10px 0 20px 0;
+}
+
+.description {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Mission Box */
+.missionCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.boxTitle {
+  color: #2b8a3e;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.missionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.missionList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #555;
+  font-weight: 500;
+}
+
+.icon {
+  color: #2b8a3e;
+  font-size: 1.2rem;
+}
+
+/* Stats Box */
+.statsCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.statItem {
+  margin-bottom: 15px;
+}
+
+.statNumber {
+  color: #ce1212;
+  font-size: 2.8rem;
+  font-weight: 800;
+  display: block;
+}
+
+.statLabel {
+  color: #2b8a3e;
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 992px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,51 @@
+import React, { useState, useEffect } from 'react';
+import styles from './HeroSection.module.css';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+
+const HeroSection = () => {
+  const slides = [
+    { id: 1, url: '/images/hero-section/hero1.webp' },
+    { id: 2, url: '/images/hero-section/hero2.webp' },
+    { id: 3, url: '/images/hero-section/hero3.webp' },
+    { id: 4, url: '/images/hero-section/hero4.webp' },
+    { id: 5, url: '/images/hero-section/hero5.webp' },
+    { id: 6, url: '/images/hero-section/hero6.webp' },
+    { id: 7, url: '/images/hero-section/hero7.webp' },
+    { id: 8, url: '/images/hero-section/hero8.webp' }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  const prevSlide = () => setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 5000);
+    return () => clearInterval(timer);
+  }, [currentIndex]);
+
+  return (
+    <section className={styles.heroContainer}>
+      <div
+        className={styles.slide}
+        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+      >
+        <div className={styles.smallShapeWrapper}>
+          <div className={styles.textContent}>
+            <h1 className={styles.title}>Non-profit NGO</h1>
+            <p className={styles.subtitle}>Support Us to help Needy</p>
+          </div>
+        </div>
+
+        <button className={`${styles.navBtn} ${styles.left}`} onClick={prevSlide}>
+          <FiChevronLeft />
+        </button>
+        <button className={`${styles.navBtn} ${styles.right}`} onClick={nextSlide}>
+          <FiChevronRight />
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;

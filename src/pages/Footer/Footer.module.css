@@ -1,0 +1,201 @@
+.footer {
+  background-color: #45535d;
+  /* Dark slate blue/grey from screenshot */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.topSection {
+  padding: 40px 0;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+  margin-bottom: 30px;
+}
+
+/* Logo and Mission */
+.logoWrapper {
+  background: white;
+  display: inline-block;
+  /* padding: 15px 25px; */
+  border-radius: 60px;
+  margin-bottom: 10px;
+}
+
+.footerLogo {
+  height: 100px;
+  display: block;
+}
+
+.missionText {
+  line-height: 1.6;
+  font-size: 20px;
+  max-width: 300px;
+  color: #e0e0e0;
+}
+
+/* Titles */
+.columnTitle {
+  color: #4caf50;
+  /* Green color from screenshot */
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Link List */
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.linkList li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #777;
+}
+
+.linkList li:hover {
+  color: #4caf50;
+}
+
+/* Contact Items */
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contactIcon {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.directionBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.directionBtn:hover {
+  background-color: #43a047;
+}
+
+/* Bottom Copyright Bar */
+.bottomBar {
+  background-color: #546570;
+  /* Slightly lighter shade for the bar */
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottomBar .container {
+  align-items: center;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #cfd8dc;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+}
+
+.statBox {
+  background: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.iconCircle {
+  background-color: #37474f;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.iconCircle:hover {
+  background-color: #4caf50;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .columnTitle {
+    margin-top: 20px;
+  }
+
+  .linkList li {
+    justify-content: center;
+  }
+
+  .contactItem {
+    justify-content: center;
+  }
+}
+
+.linkList li a {
+  text-decoration: none;
+  color: inherit;
+  /* Keeps the text color exactly as you have it now */
+  transition: color 0.3s ease;
+}
+
+.linkList li a:hover {
+  color: #14d34a;
+  /* Optional: adds your branding red on hover */
+}
