@@ -34,8 +34,9 @@
 }
 
 .logo {
-  max-width: 250px;
-  margin-bottom: 20px;
+  max-width: auto;
+  margin-bottom: 15px;
+  height: 250px;
 }
 
 .welcomeText {

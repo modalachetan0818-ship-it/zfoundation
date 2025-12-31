@@ -1,0 +1,110 @@
+.contactContainer {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 1250px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Common Card Style */
+.mapSection, .formSection {
+  background-color: #f0f7ff; /* Light blue background from your img */
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #ce1212; /* ZFoundation Red */
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+/* Map Styling */
+.mapCard {
+  flex-grow: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  background: white;
+  min-height: 400px;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Form Styling */
+.emailHint {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.emailHint span {
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input, .textarea {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.sendBtn {
+  background-color: #546e7a; /* Dark grey-blue from your img */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 30px; /* Rounded button */
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.sendBtn:hover {
+  background-color: #ce1212; /* Changes to branding red on hover */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+}

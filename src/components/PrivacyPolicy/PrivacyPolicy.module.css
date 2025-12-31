@@ -1,0 +1,124 @@
+.privacyPage {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero section with the dark teal background and hand illustrations */
+.heroSection {
+  background-color: #001f24; /* Dark Teal from image */
+  background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?q=80&w=2000'); /* Use a similar hand-drawing style image */
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heroTitle {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+/* Main content layout */
+.contentWrapper {
+  max-width: 1100px;
+  margin: -60px auto 80px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.policyCard {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cardHeader {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.mainTitle {
+  color: #003366;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.effectiveDate {
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.addressInfo {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Section styling based on images */
+.section {
+  margin-bottom: 35px;
+}
+
+.section h3 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.section p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  color: #444;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+}
+
+.subSection h4 {
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  color: #333;
+}
+
+/* Footer contact area inside the card */
+.contactSection {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.finalContact p {
+  margin: 10px 0;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .policyCard {
+    padding: 25px;
+  }
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+}
