@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './TopBar.module.css';
+import { Link } from 'react-router-dom'; // 1. Add this import
 import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 import { IoLocationSharp, IoMail } from 'react-icons/io5';
 import { RiArrowDropDownLine } from 'react-icons/ri';
@@ -13,7 +14,7 @@ const TopBar = () => {
           <div className={styles.contactDetails}>
             <div className={styles.infoItem}>
               <IoLocationSharp className={styles.icon} />
-              <span>H:NO 1-65/S/469,KAKATIYA HILLS ,GUTTALA_BEGUMPET,KAVURI HILLS JUBILEE HILLS, HYDERABAD,</span>
+              <span>H:NO 1-65/S/469, KAKATIYA HILLS, HYDERABAD</span>
             </div>
             <div className={styles.infoItem}>
               <IoMail className={styles.icon} />
@@ -30,12 +31,19 @@ const TopBar = () => {
       <nav className={styles.mainNav}>
         <div className={styles.container}>
           <div className={styles.logoWrapper}>
-            <img src="/logo.webp" alt="Z-Foundation" className={styles.logoImg} />
+            {/* Wrap logo in Link to go home */}
+            <Link to="/"><img src="/logo.webp" alt="Z-Foundation" className={styles.logoImg} /></Link>
           </div>
 
           <ul className={styles.navMenu}>
-            <li className={styles.active}>Home</li>
-            <li>About Us</li>
+            {/* 2. Wrap menu items in Links */}
+            <li className={styles.active}>
+              <Link to="/" className={styles.navLink}>Home</Link>
+            </li>
+            <li>
+              <Link to="/Aboutus" className={styles.navLink}>About Us</Link>
+            </li>
+            
             <li className={styles.hasDropdown}>
               What We Do <RiArrowDropDownLine className={styles.dropIcon} />
               <ul className={styles.dropdown}>
@@ -45,6 +53,7 @@ const TopBar = () => {
                 <li>Humanitarian Relief</li>
               </ul>
             </li>
+
             <li className={styles.hasDropdown}>
               Our Work <RiArrowDropDownLine className={styles.dropIcon} />
               <ul className={styles.dropdown}>
@@ -54,14 +63,10 @@ const TopBar = () => {
                 <li>Events</li>
               </ul>
             </li>
-            <li className={styles.hasDropdown}>
-              Our Projects <RiArrowDropDownLine className={styles.dropIcon} />
-              <ul className={styles.dropdown}>
-                <li>Ongoing Projects</li>
-                <li>Past Projects</li>
-              </ul>
+
+            <li>
+              <Link to="/contact" className={styles.navLink}>Contact Us</Link>
             </li>
-            <li>Contact Us</li>
           </ul>
 
           <button className={styles.donateBtn}>Donate</button>

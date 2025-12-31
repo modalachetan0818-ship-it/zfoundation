@@ -3,7 +3,7 @@
   height: 80vh;
   position: relative;
   overflow: hidden;
-  background-color: #ffffff; /* Changed to white to remove black lines */
+  background-color: #ffffff;
 }
 
 .slide {
@@ -13,20 +13,16 @@
   background-position: center;
   transition: background-image 0.8s ease-in-out;
   display: flex;
-  justify-content: flex-end; 
-  align-items: flex-end;    
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-/* THE SMALL SHAPE BOX - REDUCED SIZE */
 .smallShapeWrapper {
   background-color: #ffffff;
-  /* Decreased width and height to cover less of the image */
-  width: 30%; 
-  height: 35%; 
+  width: 15%;
+  height: 15;
   position: relative;
-  bottom: -1px; /* Seals the bottom edge */
-  /* Adjusted polygon for a sharper, smaller diagonal */
-  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  bottom: -1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,12 +32,12 @@
 
 .textContent {
   text-align: left;
-  animation: slideInUp 0.6s ease-out;
 }
 
 .title {
-  color: #ce1212; /* NGO Red */
-  font-size: 2rem; /* Slightly smaller for the smaller box */
+  color: #ce1212;
+  /* ZFoundation Red */
+  font-size: 2rem;
   font-weight: 800;
   margin: 0;
   line-height: 1.1;
@@ -53,7 +49,7 @@
   margin-top: 5px;
 }
 
-/* Navigation Controls - Green Buttons */
+/* Green Navigation Buttons */
 .navBtn {
   position: absolute;
   top: 50%;
@@ -78,15 +74,15 @@
   transform: translateY(-50%) scale(1.1);
 }
 
-.left { left: 20px; }
-.right { right: 20px; }
-
-@keyframes slideInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.left {
+  left: 20px;
 }
 
-/* Responsive for smaller screens */
+.right {
+  right: 20px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .smallShapeWrapper {
     width: 100%;

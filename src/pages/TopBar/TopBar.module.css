@@ -39,7 +39,7 @@
 
 /* Logo Adjustment for Second Image Style */
 .mainNav {
-  background: #cde6ee;
+  background: #9ad3e6;
   padding: 5px 0; /* Reduced padding to keep navbar slim */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
@@ -136,4 +136,16 @@
   .navMenu, .topInfoBar {
     display: none; /* Usually hidden on mobile for a hamburger menu */
   }
+}
+
+
+.navLink {
+  text-decoration: none;
+  color: inherit; /* This keeps the text color white/black as you designed it */
+  display: block;
+  width: 100%;
+}
+
+.navMenu li:hover .navLink {
+  color: #4caf50; /* Optional: Change color on hover */
 }

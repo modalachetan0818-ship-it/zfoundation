@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion'; // Ensure framer-motion is installed
 import styles from './OurCauses.module.css';
 
 const OurCauses = () => {
@@ -7,7 +8,6 @@ const OurCauses = () => {
       id: 1,
       title: 'Women Empowerment',
       description: 'The world has always challenged women, yet their strength prevails. ZFoundation is dedicated to empowering women by providing resources, support, and equal opportunities.',
-      // Image focused on vocational training/entrepreneurship as requested
       img: 'https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&q=80&w=1000',
     },
     {
@@ -24,13 +24,45 @@ const OurCauses = () => {
     }
   ];
 
+  // Variants for staggered entrance
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.25, // Delay between each card's appearance
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.8, y: 30 },
+    visible: { 
+      opacity: 1, 
+      scale: 1, 
+      y: 0, 
+      transition: { duration: 0.6, ease: "easeOut" } 
+    }
+  };
+
   return (
-    <section className={styles.container}>
-      <h2 className={styles.sectionTitle}>Our Causes</h2>
+    <motion.section 
+      className={styles.container}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }} // Triggers when 20% is visible
+      variants={containerVariants}
+    >
+      <motion.h2 variants={cardVariants} className={styles.sectionTitle}>
+        Our Causes
+      </motion.h2>
       <div className={styles.grid}>
         {causes.map((cause) => (
-          <div key={cause.id} className={styles.card}>
-            {/* Animation is scoped ONLY to this container */}
+          <motion.div 
+            key={cause.id} 
+            className={styles.card}
+            variants={cardVariants}
+          >
             <div className={styles.imageContainer}>
               <img src={cause.img} alt={cause.title} className={styles.zoomImg} />
             </div>
@@ -41,10 +73,10 @@ const OurCauses = () => {
             </div>
             
             <button className={styles.donateBtn}>Donate now</button>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

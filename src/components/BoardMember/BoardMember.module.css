@@ -1,0 +1,98 @@
+.boardSection {
+  padding: 80px 0;
+  background-color: #ffffff;
+  background-image: radial-gradient(circle, #f0f0f0 1px, transparent 1px);
+  background-size: 40px 40px; /* Subtle spiral background pattern */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.redHeading {
+  color: #ce1212; /* NGO Red */
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.founderRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.memberGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  gap: 20px;
+}
+
+.memberCard {
+  background-color: #a2d5f0; /* Light Blue Card */
+  border-radius: 20px;
+  padding: 25px 0 0 0;
+  text-align: center;
+  border: 1px solid #b3e5fc;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+  height: fit-content; /* Card grows when info opens */
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.avatarImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px; /* Boxy round corners */
+  object-fit: cover;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.memberName { font-weight: 700; color: #333; margin: 0; }
+.memberRole { color: #666; font-size: 0.9rem; margin-bottom: 15px; }
+
+.plusBox {
+  background-color: #ffffff; /* White bottom bar */
+  padding: 12px;
+  cursor: pointer;
+  border-top: 1px solid #e1f5fe;
+  display: flex;
+  justify-content: center;
+}
+
+.greenIcon {
+  color: #31d522; /* NGO Green */
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+.detailsBox {
+  background-color: #f4dada;
+  padding: 20px;
+  text-align: left;
+  border-top: 1px solid #eee;
+}
+
+.detailsText { 
+  font-size: 0.9rem; 
+  color: #555; 
+  line-height: 1.6; 
+  margin: 0; 
+}
+
+@media (max-width: 1024px) {
+  .memberGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .memberGrid { grid-template-columns: 1fr; }
+}

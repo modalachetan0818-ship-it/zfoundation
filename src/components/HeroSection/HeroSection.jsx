@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './HeroSection.module.css';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { motion, AnimatePresence } from 'framer-motion'; // Import Framer Motion
 
 const HeroSection = () => {
   const slides = [
@@ -30,12 +31,35 @@ const HeroSection = () => {
         className={styles.slide}
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
       >
-        <div className={styles.smallShapeWrapper}>
-          <div className={styles.textContent}>
-            <h1 className={styles.title}>Non-profit NGO</h1>
-            <p className={styles.subtitle}>Support Us to help Needy</p>
-          </div>
-        </div>
+        {/* AnimatePresence ensures smooth transitions between slides */}
+        <AnimatePresence mode="wait">
+          <motion.div 
+            key={currentIndex} // Reset animation on slide change
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className={styles.smallShapeWrapper}
+          >
+            <div className={styles.textContent}>
+              <motion.h1 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                className={styles.title}
+              >
+                Non-profit 
+              </motion.h1>
+              <motion.p 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+                className={styles.subtitle}
+              >
+                Support Us to help Needy
+              </motion.p>
+            </div>
+          </motion.div>
+        </AnimatePresence>
 
         <button className={`${styles.navBtn} ${styles.left}`} onClick={prevSlide}>
           <FiChevronLeft />

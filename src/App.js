@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import TopBar from './pages/TopBar/TopBar';
 import Footer from './pages/Footer/Footer';
 import Home from './pages/HomePage/HomePage';
@@ -15,7 +15,7 @@ function App() {
       <TopBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/Events" element={<Events />} />

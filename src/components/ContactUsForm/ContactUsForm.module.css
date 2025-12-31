@@ -3,6 +3,7 @@
   background-color: #ffffff;
   display: flex;
   justify-content: center;
+  overflow: hidden; /* Important for horizontal animations */
 }
 
 .wrapper {
@@ -13,9 +14,9 @@
   gap: 30px;
 }
 
-/* Common Card Style */
+/* Light blue background matching image_c8479e.jpg */
 .mapSection, .formSection {
-  background-color: #f0f7ff; /* Light blue background from your img */
+  background-color: #f0f7ff; 
   padding: 40px;
   border-radius: 20px;
   display: flex;
@@ -23,14 +24,13 @@
 }
 
 .title {
-  color: #ce1212; /* ZFoundation Red */
+  color: #ce1212; /* ZFoundation Red from image_c8479e.jpg */
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 25px;
   margin-top: 0;
 }
 
-/* Map Styling */
 .mapCard {
   flex-grow: 1;
   border-radius: 15px;
@@ -46,7 +46,6 @@
   border: none;
 }
 
-/* Form Styling */
 .emailHint {
   color: #666;
   margin-bottom: 30px;
@@ -83,23 +82,24 @@
 }
 
 .sendBtn {
-  background-color: #546e7a; /* Dark grey-blue from your img */
+  background-color: #546e7a; /* Dark grey-blue button */
   color: white;
   padding: 15px;
   border: none;
-  border-radius: 30px; /* Rounded button */
+  border-radius: 30px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   margin-top: 10px;
 }
 
 .sendBtn:hover {
-  background-color: #ce1212; /* Changes to branding red on hover */
+  background-color: #ce1212; /* Branded Red hover effect */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(206, 18, 18, 0.3);
 }
 
-/* Responsive for Mobile */
 @media (max-width: 900px) {
   .wrapper {
     grid-template-columns: 1fr;
