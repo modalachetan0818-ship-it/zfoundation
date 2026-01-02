@@ -24,7 +24,7 @@ const Footer = () => {
           <div className={styles.column}>
             <h3 className={styles.columnTitle}>Quick Links</h3>
             <ul className={styles.linkList}>
-              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/AboutUs">About Us</Link></li>
               <li><Link to="/volunteer">Volunteer</Link></li>
               <li><Link to="/gallery">Gallery</Link></li>
               <li><Link to="/events">Events</Link></li>

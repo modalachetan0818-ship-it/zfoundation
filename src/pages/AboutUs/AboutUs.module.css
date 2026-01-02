@@ -13,7 +13,7 @@
 /* Hero Section Styles */
 .heroSection {
   background-color: #001f24;
-  background-image: url('https://ammanifoundation.org/assets/img/hero-pattern.png');
+  background-image: url('/public/images/backgound\ section\ img.png');
   background-size: cover;
   background-position: center;
   height: 250px;
@@ -27,6 +27,7 @@
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+  color: #ffffff;
 }
 
 /* Welcome Section */
@@ -80,7 +81,7 @@
 
 .valueCard {
   /* Solid Green Block - No Gradients */
-  background: linear-gradient(180deg, #6ecb73 0%, #3d9e43 100%);
+  background: linear-gradient(180deg, #78d87d 0%, #3f9144 100%);
   width: 250px;
   height: 250px;
   border-radius: 40px; /* Deep rounded corners */

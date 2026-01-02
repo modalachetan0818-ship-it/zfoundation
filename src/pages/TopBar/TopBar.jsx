@@ -43,25 +43,29 @@ const TopBar = () => {
             <li>
               <Link to="/Aboutus" className={styles.navLink}>About Us</Link>
             </li>
-            
+
             <li className={styles.hasDropdown}>
               What We Do <RiArrowDropDownLine className={styles.dropIcon} />
               <ul className={styles.dropdown}>
-                <li>Women Empowerment</li>
-                <li>Education</li>
-                <li>Child Nature</li>
-                <li>Humanitarian Relief</li>
+                <li><Link to="/WomenEmpowerment" className={styles.navLink}>WomenEmpowerment</Link></li>
+                <li><Link to="/Education" className={styles.navLink}>Education</Link></li>
+                <li><Link to="/ChildNature" className={styles.navLink}>ChildNature</Link></li>
+                <li><Link to="/HumanitarianRelief" className={styles.navLink}>HumanitarianRelief</Link></li>
               </ul>
             </li>
 
             <li className={styles.hasDropdown}>
               Our Work <RiArrowDropDownLine className={styles.dropIcon} />
               <ul className={styles.dropdown}>
-                <li>Gallery</li>
-                <li>Videos</li>
-                <li>Achievements</li>
-                <li>Events</li>
+                <li><Link to="/gallery" className={styles.navLink}>Gallery</Link></li>
+                <li><Link to="/videos" className={styles.navLink}>Videos</Link></li>
+                <li><Link to="/Events" className={styles.navLink}>Events</Link></li>
               </ul>
+            </li>
+
+
+             <li>
+              <Link to="/OurProjects" className={styles.navLink}>Our Projects</Link>
             </li>
 
             <li>

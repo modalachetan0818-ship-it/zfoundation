@@ -7,7 +7,7 @@
 /* Hero section with the dark teal background and hand illustrations */
 .heroSection {
   background-color: #001f24; /* Dark Teal from image */
-  background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?q=80&w=2000'); /* Use a similar hand-drawing style image */
+  background-image: url('/public/images/backgound\ section\ img.png'); /* Use a similar hand-drawing style image */
   background-size: cover;
   background-position: center;
   height: 250px;

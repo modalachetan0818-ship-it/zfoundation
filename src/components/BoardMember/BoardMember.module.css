@@ -2,24 +2,18 @@
   padding: 80px 0;
   background-color: #ffffff;
   background-image: radial-gradient(circle, #f0f0f0 1px, transparent 1px);
-  background-size: 40px 40px; /* Subtle spiral background pattern */
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  background-size: 40px 40px;
 }
 
 .redHeading {
-  color: #ce1212; /* NGO Red */
+  color: #ce1212;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 50px;
 }
 
-.founderRow {
+.founderWrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -27,19 +21,22 @@
 
 .memberGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  grid-template-columns: repeat(4, 1fr); /* 4 members per row */
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .memberCard {
-  background-color: #a2d5f0; /* Light Blue Card */
+  background-color: #BAE1FF; /* Light Blue Background */
   border-radius: 20px;
   padding: 25px 0 0 0;
   text-align: center;
   border: 1px solid #b3e5fc;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
   overflow: hidden;
-  height: fit-content; /* Card grows when info opens */
+  height: fit-content;
+  width: 280px;
 }
 
 .imgWrapper {
@@ -49,19 +46,18 @@
 }
 
 .avatarImg {
-  width: 150px;
-  height: 150px;
-  border-radius: 15px; /* Boxy round corners */
+  width: 160px;
+  height: 160px;
+  border-radius: 12px; /* Square rounded corners */
   object-fit: cover;
   background-color: #fff;
-  border: 1px solid #eee;
 }
 
-.memberName { font-weight: 700; color: #333; margin: 0; }
-.memberRole { color: #666; font-size: 0.9rem; margin-bottom: 15px; }
+.memberName { font-weight: 700; color: #263238; margin: 0; }
+.memberRole { color: #546e7a; font-size: 0.9rem; margin: 5px 0 15px 0; }
 
 .plusBox {
-  background-color: #ffffff; /* White bottom bar */
+  background-color: #ffffff; /* White interactive box */
   padding: 12px;
   cursor: pointer;
   border-top: 1px solid #e1f5fe;
@@ -70,29 +66,20 @@
 }
 
 .greenIcon {
-  color: #31d522; /* NGO Green */
+  color: #4caf50; /* NGO Green */
   font-size: 1.8rem;
   transition: transform 0.3s ease;
 }
 
 .detailsBox {
-  background-color: #f4dada;
+  background-color: #ffffff;
   padding: 20px;
-  text-align: left;
   border-top: 1px solid #eee;
+  text-align: left;
 }
 
-.detailsText { 
-  font-size: 0.9rem; 
-  color: #555; 
-  line-height: 1.6; 
-  margin: 0; 
-}
+.detailsText { font-size: 0.9rem; color: #555; line-height: 1.6; margin: 0; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .memberGrid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 600px) {
-  .memberGrid { grid-template-columns: 1fr; }
 }

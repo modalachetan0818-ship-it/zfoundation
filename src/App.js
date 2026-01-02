@@ -9,9 +9,15 @@ import Gallery from './components/Gallery/Gallery';
 import Events from './components/Events/Events';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import ContactUs from './components/ContactUs/ContactUs';
+import Aboutsection from './components/Aboutsection/Aboutsection';
+import WomenEmpowerment from './components/What We Do/WomenEmpowerment/WomenEmpowerment';
+import Education from './components/What We Do/Education/Education';
+import ChildNature from './components/What We Do/ChildNature/ChildNature';
+import HumanitarianRelief from './components/What We Do/HumanitarianRelief/HumanitarianRelief';
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <TopBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +27,10 @@ function App() {
         <Route path="/Events" element={<Events />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/WomenEmpowerment" element={<WomenEmpowerment />} />
+        <Route path="/Education" element={<Education />} />
+        <Route path="/ChildNature" element={<ChildNature/>}/>
+        <Route path="/HumanitarianRelief" element={<HumanitarianRelief/>}/>
       </Routes>
       <Footer />
     </div>
