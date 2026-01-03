@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './ChildNature.module.css';
 
@@ -6,12 +7,12 @@ const ChildNature = () => {
   // 1. Beautiful Liquid Fade & Scale for Images
   const liquidImage = {
     hidden: { opacity: 0, filter: "blur(10px)", scale: 0.9, y: 30 },
-    visible: { 
-      opacity: 1, 
-      filter: "blur(0px)", 
-      scale: 1, 
-      y: 0, 
-      transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] } 
+    visible: {
+      opacity: 1,
+      filter: "blur(0px)",
+      scale: 1,
+      y: 0,
+      transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] }
     }
   };
 
@@ -32,7 +33,7 @@ const ChildNature = () => {
   return (
     <div className={styles.mainWrapper}>
       {/* Banner with Tracking Animation */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, letterSpacing: "-5px" }}
         animate={{ opacity: 1, letterSpacing: "2px" }}
         transition={{ duration: 1.5, ease: "easeOut" }}
@@ -43,7 +44,7 @@ const ChildNature = () => {
 
       <div className={styles.container}>
         {/* Section 1: Image Left */}
-        <motion.section 
+        <motion.section
           initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}
           className={styles.infoSection}
         >
@@ -53,13 +54,13 @@ const ChildNature = () => {
           <motion.div variants={textContainer} className={styles.textBox}>
             <motion.h2 variants={textItem} className={styles.sectionHeading}>Nourishment for Every Child</motion.h2>
             <motion.p variants={textItem} className={styles.paragraph}>
-        Proper nutrition is the foundation of a healthy childhood, yet millions of children are denied this basic right every single day. Across underprivileged communities, countless little ones go to bed hungry, surviving on empty stomachs and inadequate diets that rob them of energy, focus, and growth. Malnutrition not only weakens their bodies but also hinders their learning, confidence, and ability to dream. At Ammani Foundation, we believe no child should face the injustice of hunger. We work to ensure that every child receives wholesome meals that nourish their bodies, fuel their curiosity, and instill hope for a brighter future. Because when a child eats well, they do more than survive—they learn, grow, and thrive.
+              Proper nutrition is the foundation of a healthy childhood, yet millions of children are denied this basic right every single day. Across underprivileged communities, countless little ones go to bed hungry, surviving on empty stomachs and inadequate diets that rob them of energy, focus, and growth. Malnutrition not only weakens their bodies but also hinders their learning, confidence, and ability to dream. At Ammani Foundation, we believe no child should face the injustice of hunger. We work to ensure that every child receives wholesome meals that nourish their bodies, fuel their curiosity, and instill hope for a brighter future. Because when a child eats well, they do more than survive—they learn, grow, and thrive.
             </motion.p>
           </motion.div>
         </motion.section>
 
         {/* Section 2: Reversed Position */}
-        <motion.section 
+        <motion.section
           initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}
           className={`${styles.infoSection} ${styles.reversed}`}
         >
@@ -75,7 +76,7 @@ const ChildNature = () => {
         </motion.section>
 
         {/* Section 3: Final Section */}
-        <motion.section 
+        <motion.section
           initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}
           className={styles.infoSection}
         >
@@ -91,13 +92,15 @@ const ChildNature = () => {
         </motion.section>
 
         {/* Donate Button Beautiful Reveal */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           className={styles.buttonWrapper}
         >
-          <button className={styles.donateBtn}>Donate Now</button>
+          <Link to="/Donate">
+            <button className={styles.donateBtn}>Donate Now</button>
+          </Link>
         </motion.div>
       </div>
     </div>

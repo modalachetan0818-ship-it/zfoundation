@@ -97,10 +97,10 @@
 
 .paragraph {
   color: #444;
-  font-size: 1.15rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.7;
   text-align: justify;
-  line-height:25px;
+
 }
 
 .buttonWrapper {

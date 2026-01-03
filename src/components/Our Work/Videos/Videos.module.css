@@ -1,0 +1,110 @@
+.videoPage {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Matching the dark teal and pattern */
+.heroBanner {
+  background-color: #001f24;
+   background-image: url('/public/images/unnamed8.webp');
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: contain;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+.heroTitle {
+  color: #000000;
+  font-size: 2.0rem;
+  font-weight: 400;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Red Heading */
+.mainHeading {
+  color: #ce1212;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Green Video Titles */
+.videoTitle {
+  color: #1c8b5b;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.iframeWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .videoGrid { grid-template-columns: 1fr; }
+  .heroTitle { font-size: 2rem; }
+  .mainHeading { font-size: 1.8rem; }
+}
+/* Update your grid and card for a cleaner look */
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px; /* Reduced gap to bring items closer */
+}
+
+.videoCard {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.videoCard:hover {
+  transform: translateY(-5px); /* Adds a subtle floating effect on hover */
+}
+
+/* Red title for the section */
+.mainHeading {
+  color: #ce1212; 
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* Green labels for individual videos */
+.videoTitle {
+  color: #1c8b5b;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

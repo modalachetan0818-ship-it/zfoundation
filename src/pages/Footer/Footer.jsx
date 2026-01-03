@@ -6,6 +6,10 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa'
 import { IoCallOutline, IoMailOutline, IoLocationOutline } from 'react-icons/io5';
 
 const Footer = () => {
+  const handleGetDirection = () => {
+    const address = "H:NO 1-65/S/469, KAKATIYA HILLS, GUTTALA_BEGUMPET, KAVURI HILLS, JUBILEE HILLS, HYDERABAD, TELANGANA, 500081";
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`, '_blank');
+  };
   return (
     <footer className={styles.footer}>
       <div className={styles.topSection}>
@@ -13,7 +17,7 @@ const Footer = () => {
           {/* Column 1: Logo and Mission */}
           <div className={styles.column}>
             <div className={styles.logoWrapper}>
-              <img src="/logo.webp" alt="Z-Foundation" className={styles.footerLogo} />
+              <img src="/logo.png" alt="Z-Foundation" className={styles.footerLogo} />
             </div>
             <p className={styles.missionText}>
               On a mission to build a better tomorrow through education, empowerment, and empathy.
@@ -52,7 +56,7 @@ const Footer = () => {
                 TELANGANA, 500081.
               </span>
             </div>
-            <button className={styles.directionBtn}>Get Direction</button>
+            <button className={styles.directionBtn} onClick={handleGetDirection}>Get Direction</button>
           </div>
         </div>
       </div>
@@ -63,7 +67,7 @@ const Footer = () => {
           <div className={styles.copyright}>
             Copyright © 2023 Z FOUNDATION Designed & Developed By Akhil Kumar Bejjenki
           </div>
-          
+
           {/* <div className={styles.stats}>
             <span className={styles.statBox}>Unique Views : 1848</span>
             <span className={styles.statBox}>Website Views : 4888</span>

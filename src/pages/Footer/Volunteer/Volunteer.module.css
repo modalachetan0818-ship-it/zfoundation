@@ -1,0 +1,157 @@
+.heroBanner {
+  background-color: #001f24;
+   background-image: url('/public/images/unnamed8.webp');
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: contain;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+.heroTitle {
+  color: #000000;
+  font-size: 2.0rem;
+  font-weight: 400;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.contentSection {
+  min-height: 100vh;
+  padding: 80px 20px;
+  /* Updated Background without watermark */
+  background: url('/public/images/section\ background\ image.jpg') repeat;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  background-size: 2250px;
+}
+
+.formContainer {
+  position: relative;
+  z-index: 2;
+  background: #c7c4c4;
+  width: 100%;
+  max-width: 750px;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  max-width: 350px;
+  /* Adjusted to fit the logo properly */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.welcomeText {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sectionTitle {
+  color: #444;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Removed lines and styled inputs */
+.input,
+.inputFull,
+.textarea {
+  background-color: #f0f7ff;
+  border: 1opx solid transparent;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.inputFull:focus,
+.textarea:focus {
+  border-color: #0e0e0f;
+  outline: none;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #2e7d32;
+  /* NGO Forest Green */
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.submitBtn {
+  background-color: #546e7a;
+  /* Professional Blue-Grey */
+  color: white;
+  padding: 18px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.submitBtn:hover {
+  background-color: #43a047;
+  /* NGO Red */
+  box-shadow: 0 5px 15px rgba(52, 215, 123, 0.3);
+}
+
+@media (max-width: 768px) {
+  .inputRow {
+    flex-direction: column;
+  }
+
+  .checkboxGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formContainer {
+    padding: 30px 20px;
+  }
+}

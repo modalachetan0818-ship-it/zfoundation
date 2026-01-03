@@ -32,7 +32,7 @@ const TopBar = () => {
         <div className={styles.container}>
           <div className={styles.logoWrapper}>
             {/* Wrap logo in Link to go home */}
-            <Link to="/"><img src="/logo.webp" alt="Z-Foundation" className={styles.logoImg} /></Link>
+            <Link to="/"><img src="/logo.png" alt="Z-Foundation" className={styles.logoImg} /></Link>
           </div>
 
           <ul className={styles.navMenu}>
@@ -64,7 +64,7 @@ const TopBar = () => {
             </li>
 
 
-             <li>
+            <li>
               <Link to="/OurProjects" className={styles.navLink}>Our Projects</Link>
             </li>
 
@@ -73,7 +73,9 @@ const TopBar = () => {
             </li>
           </ul>
 
-          <button className={styles.donateBtn}>Donate</button>
+          <Link to="/Donate">
+            <button className={styles.donateBtn}>Donate</button>
+          </Link>
         </div>
       </nav>
     </header>

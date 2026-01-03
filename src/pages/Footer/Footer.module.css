@@ -1,5 +1,5 @@
 .footer {
-  background-color: #45535d;
+  background-color: #46515a;
   /* Dark slate blue/grey from screenshot */
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -27,16 +27,9 @@
 }
 
 /* Logo and Mission */
-.logoWrapper {
-  background: white;
-  display: inline-block;
-  /* padding: 15px 25px; */
-  border-radius: 60px;
-  margin-bottom: 10px;
-}
 
 .footerLogo {
-  height: 100px;
+  height: 180px;
   display: block;
 }
 

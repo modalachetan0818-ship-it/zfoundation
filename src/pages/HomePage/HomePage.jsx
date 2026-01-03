@@ -1,11 +1,12 @@
 import React from 'react';
-import HeroSection from '../../components/HeroSection/HeroSection.jsx';
-import Aboutsection from '../../components/Aboutsection/Aboutsection.jsx';
-import OurStory from '../../components/OurStory/OurStory.jsx';
-import FounderSection from '../../components/FounderSection/FounderSection.jsx';
-import OurCauses from '../../components/OurCauses/OurCauses.jsx';
-import WorkGallery from '../../components/WorkGallery/WorkGallery.jsx';
-import ContactUsForm from '../../components/ContactUsForm/ContactUsForm.jsx';
+import HeroSection from '../../components/Home Folder/HeroSection/HeroSection.jsx';
+import Aboutsection from '../../components/Home Folder/Aboutsection/Aboutsection.jsx';
+import OurStory from '../../components/Home Folder/OurStory/OurStory.jsx';
+import FounderSection from '../../components/Home Folder/FounderSection/FounderSection.jsx';
+import OurCauses from '../../components/Home Folder/OurCauses/OurCauses.jsx';
+import WorkGallery from '../../components/Home Folder/WorkGallery/WorkGallery.jsx';
+import ContactUsForm from '../../components/Home Folder/ContactUsForm/ContactUsForm.jsx';
+
 const HomePage = () => {
   return (
     <div>
