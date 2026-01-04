@@ -137,13 +137,71 @@
   background-color: #43a047;
 }
 
+.mobileMenuIcon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #b34700;
+}
+
+.donateLink {
+  display: block;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
 
-  .navMenu,
   .topInfoBar {
     display: none;
-    /* Usually hidden on mobile for a hamburger menu */
+  }
+
+  .mobileMenuIcon {
+    display: block;
+  }
+
+  .donateLink {
+    display: none;
+    /* Hide the main donate button on mobile */
+  }
+
+  .navMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #eee;
+  }
+
+  .navMenu.mobileActive {
+    display: flex;
+  }
+
+  .navMenu li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    display: block;
+  }
+
+  .dropdown {
+    position: static;
+    display: none;
+    box-shadow: none;
+    padding: 10px 0 10px 20px;
+    background: #fafafa;
+    min-width: 100%;
+  }
+
+  .hasDropdown:hover .dropdown {
+    display: block;
   }
 }
 

@@ -166,6 +166,23 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 30px;
+  }
+
+  .column {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .footerLogo {
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .missionText {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .columnTitle {
@@ -178,6 +195,15 @@
 
   .contactItem {
     justify-content: center;
+  }
+
+  .bottomBar .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .copyright {
+    text-align: center;
   }
 }
 

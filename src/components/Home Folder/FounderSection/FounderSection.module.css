@@ -3,7 +3,8 @@
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  overflow: hidden; /* Added to keep animation clean */
+  overflow: hidden;
+  /* Added to keep animation clean */
 }
 
 .wrapper {
@@ -22,7 +23,8 @@
   width: 100%;
   height: 450px;
   object-fit: cover;
-  border-radius: 40px; /* Rounded corners from reference */
+  border-radius: 40px;
+  /* Rounded corners from reference */
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,7 +33,8 @@
 }
 
 .founderName {
-  color: #ce1212; /* ZFoundation Red */
+  color: #ce1212;
+  /* ZFoundation Red */
   font-size: 2.5rem;
   font-weight: 800;
   margin: 0;
@@ -45,7 +48,8 @@
 }
 
 .quote {
-  color: #2b8a3e; /* ZFoundation Green */
+  color: #2b8a3e;
+  /* ZFoundation Green */
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 15px;
@@ -71,10 +75,13 @@
   margin-top: 30px;
 }
 
-.iconCircle, .iconCircle1, .iconCircle2 {
+.iconCircle,
+.iconCircle1,
+.iconCircle2 {
   width: 45px;
   height: 45px;
-  background-color: #455a64; /* Grey-blue from reference */
+  background-color: #455a64;
+  /* Grey-blue from reference */
   color: white;
   border-radius: 50%;
   display: flex;
@@ -85,11 +92,53 @@
   text-decoration: none;
 }
 
-.iconCircle:hover { background-color: #ce1212; transform: translateY(-3px); }
-.iconCircle1:hover { background-color: #4621dc; transform: translateY(-3px); }
-.iconCircle2:hover { background-color: #e414a9; transform: translateY(-3px); }
+.iconCircle:hover {
+  background-color: #ce1212;
+  transform: translateY(-3px);
+}
+
+.iconCircle1:hover {
+  background-color: #4621dc;
+  transform: translateY(-3px);
+}
+
+.iconCircle2:hover {
+  background-color: #e414a9;
+  transform: translateY(-3px);
+}
 
 @media (max-width: 992px) {
-  .wrapper { flex-direction: column; align-items: center; }
-  .imageContainer { flex: 0 0 100%; width: 100%; max-width: 400px; }
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .founderName {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .designation {
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .highlightText,
+  .biography {
+    text-align: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
 }

@@ -2,18 +2,21 @@
   padding: 60px 20px;
   text-align: center;
   background-color: #ffffff;
-  overflow: hidden; /* Important for slide animations */
+  overflow: hidden;
+  /* Important for slide animations */
 }
 
 .mainTitle {
-  color: #ce1212; /* ZFoundation Red */
+  color: #ce1212;
+  /* ZFoundation Red */
   font-size: 3.5rem;
   font-weight: 800;
   margin: 0;
 }
 
 .subtitle {
-  color: #2b8a3e; /* NGO Green branding */
+  color: #2b8a3e;
+  /* NGO Green branding */
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 10px;
@@ -41,7 +44,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.4s ease-in-out; 
+  transition: transform 0.4s ease-in-out;
   padding: 20px;
 }
 
@@ -79,7 +82,7 @@
 
 /* --- HOVER EFFECTS REMAIN UNCHANGED --- */
 .card:hover .interactionArea {
-  transform: scale(0.85); 
+  transform: scale(0.85);
 }
 
 .card:hover .ovalBackground {
@@ -94,5 +97,14 @@
   .grid {
     flex-direction: column;
     align-items: center;
+  }
+
+  .mainTitle {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
   }
 }

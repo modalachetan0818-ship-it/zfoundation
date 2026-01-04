@@ -1,6 +1,6 @@
 .container {
   padding: 80px 20px;
-  background-color: #f0f4f8; 
+  background-color: #f0f4f8;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -24,8 +24,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px; 
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .contentSection {
@@ -38,18 +38,20 @@
   background: #ffffff;
   padding: 40px;
   border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .title {
-  color: #ce1212; /* ZFoundation Red */
+  color: #ce1212;
+  /* ZFoundation Red */
   font-size: 2.8rem;
   font-weight: 800;
   margin: 0;
 }
 
 .subtitle {
-  color: #2b8a3e; /* ZFoundation Green */
+  color: #2b8a3e;
+  /* ZFoundation Green */
   font-size: 1.4rem;
   font-weight: 600;
   margin: 10px 0 20px 0;
@@ -67,11 +69,12 @@
   gap: 20px;
 }
 
-.missionCard, .statsCard {
+.missionCard,
+.statsCard {
   background: #ffffff;
   padding: 30px;
   border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .boxTitle {
@@ -105,6 +108,23 @@
 }
 
 @media (max-width: 992px) {
-  .wrapper { grid-template-columns: 1fr; }
-  .bottomGrid { grid-template-columns: 1fr; }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .statNumber {
+    font-size: 2.2rem;
+  }
 }

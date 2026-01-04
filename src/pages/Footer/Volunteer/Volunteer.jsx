@@ -20,7 +20,7 @@ const Volunteer = () => {
         <div className={styles.formContainer}>
           {/* Header with Logo */}
           <div className={styles.header}>
-            <img src="/logo.webp" alt="Ammani Foundation" className={styles.logo} />
+            <img src="/logo.png" alt="Z Foundation" className={styles.logo} />
             <h2 className={styles.welcomeText}>We are glad to see you take this step</h2>
           </div>
 

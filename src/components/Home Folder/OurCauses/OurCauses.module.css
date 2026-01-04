@@ -2,11 +2,13 @@
   padding: 80px 20px;
   background-color: #ffffff;
   text-align: center;
-  overflow: hidden; /* Prevents overflow during scaling animation */
+  overflow: hidden;
+  /* Prevents overflow during scaling animation */
 }
 
 .sectionTitle {
-  color: #ce1212; /* ZFoundation Red from your reference */
+  color: #ce1212;
+  /* ZFoundation Red from your reference */
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 50px;
@@ -58,7 +60,8 @@
 }
 
 .causeTitle {
-  color: #2b8a3e; /* Branding Green */
+  color: #2b8a3e;
+  /* Branding Green */
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 12px;
@@ -90,5 +93,10 @@
 @media (max-width: 768px) {
   .card {
     width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
 }
